@@ -7,17 +7,17 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram\n 6.Order List using Generics");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         BinarySearch binarysearch = new BinarySearch();
-                        binarysearch.Search(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
+                        binarysearch.Search(@"C:\Users\HP\Desktop\rfp\brigdelabz assignment\asignment\DataStructureAndAlgorithm\DataStructureAndAlgorithm\DataStructureAndAlgorithm\Word.txt");
                         break;
                     case 2:
                         BubbleSort bubblesort = new BubbleSort();
-                        bubblesort.Sort(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
+                        bubblesort.Sort(@"C:\Users\HP\Desktop\rfp\brigdelabz assignment\asignment\DataStructureAndAlgorithm\DataStructureAndAlgorithm\DataStructureAndAlgorithm\Word.txt");
                         break;
                     case 3:
                         Anagram anagram = new Anagram();
@@ -32,6 +32,10 @@
                         primePalimdrome.PrimeNumber();
                         primePalimdrome.Palindrome();
                         primePalimdrome.AnagramCheck();
+                        break;
+                    case 6:
+                        OrderList orderList = new OrderList();
+                        orderList.Link(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
                         break;
                 }
             }
