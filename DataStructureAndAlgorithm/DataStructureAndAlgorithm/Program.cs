@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram\n 6.Order List using Generics\n 7.String repalce");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number\n 5.Check Number is Prime,palindrome or Anagram\n 6.Order List using Generics\n 7.String repalce\n 8.Balanced Parantheses");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -35,13 +35,18 @@
                         break;
                     case 6:
                         OrderList orderList = new OrderList();
-                        orderList.Link(@"C:\Users\Suraj Sinha\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
+                        orderList.Link(@"C:\Users\hp\OneDrive\Desktop\Bridgelabz\DataStructureAndAlgorithm\DataStructureandAlgorithm\Words.txt");
                         break;
                     case 7:
                         StringReplace stringReplace = new StringReplace();
                         stringReplace.Validate("\nHello << name >>, We have your fullname as << full name >> in our system.", "abc");
                         stringReplace.ValidateNumber("your contact number is << contactno >>.", "91 7558570105");
                         stringReplace.ValidateDate("Thank you BridgeLabz << Date >>.\n", "25/09/2022");
+                        break;
+                    case 8:
+                        BalancedParantheses balanceParentheses = new BalancedParantheses();
+                        balanceParentheses.BalanceParantheses(@"C:\Users\HP\Desktop\rfp\brigdelabz assignment\asignment\DataStructureAndAlgorithm\DataStructureAndAlgorithm\DataStructureAndAlgorithm\Word.txt");
+                      
                         break;
                 }
             }
