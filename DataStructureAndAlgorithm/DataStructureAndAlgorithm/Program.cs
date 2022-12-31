@@ -7,7 +7,7 @@
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection");
+                Console.WriteLine("Select Programs\n 1.Binary search\n 2.Bubble sort\n 3.Anagram Detection\n 4.Check Prime Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,10 @@
                     case 3:
                         Anagram anagram = new Anagram();
                         anagram.AnagramCheck("heart", "earth");
+                        break;
+                    case 4:
+                        PrimeNumber prime = new PrimeNumber();
+                        prime.Prime();
                         break;
                 }
             }
